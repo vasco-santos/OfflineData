@@ -1,0 +1,28 @@
+<div class="table-responsive">
+    <table class="table table-bordered table-hover table-striped">
+        <thead>
+            <tr>
+                <td>Number</td>
+                <td>ID</td>
+                <td>Name</td>
+                <td>Sex</td>
+                <td>Blood Type</td>
+                <td>Headquarters</td>
+            </tr>
+        </thead>
+        <tbody ng-repeat="m in firefighter.result">
+            <tr>
+                <td>{{$index}}</td>
+                <td>{{m.bombeiro_id}}</td>
+                <td>{{m.name}}</td>
+                <td>{{m.sex}}</td>
+                <td>{{m.bloodType}}</td>
+                <td>{{m.headquarters}}</td>
+            </tr>
+            <!--<tr ng-repeat="e in m.value">
+              <td>{{e.foo}}</td>
+              <td>{{e.bar}}</td>
+            </tr> -->
+        </tbody>
+    </table>
+</div>
